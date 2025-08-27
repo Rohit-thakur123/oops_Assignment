@@ -14,4 +14,5 @@ public class oops_Assignment {
         int n=sc.nextInt();
         System.out.println("hence the sum of first "+n+" natural no is: "+sum_natural_no(n));
     }
+    
 }
