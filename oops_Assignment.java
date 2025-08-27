@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class oops_Assignment_01 {
+public class oops_Assignment {
 //Ans 1: Sum of Natural Numbers
     public static int sum_natural_no(int n){
         int sum=(n*(n+1))/2;
