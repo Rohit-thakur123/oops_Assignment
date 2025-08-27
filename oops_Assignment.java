@@ -44,6 +44,25 @@ public class oops_Assignment {
         return sum;
     }
 
+//ans 6: pallindrome
+    public static boolean pallindrome(int n){
+        int rev=0;
+        int x=n;
+        while(n != 0){
+            int last=n%10;
+            rev=(rev*10)+last;
+            n/=10;
+        }
+        System.out.println(rev);
+       if(rev == x){
+        return true;
+       }
+       else{
+        return false;
+       }
+        
+    }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 // ques 1: Sum of Natural Numbers
@@ -67,9 +86,14 @@ public class oops_Assignment {
         // System.out.println("total no of digit: "+count_Digit(n));
 
 //ques 5: sum of digit
+        // System.out.print("enter no: ");
+        // int n=sc.nextInt();
+        // System.out.println("sum no of digit: "+sum_Digit(n));
+
+//ques 6: pallindrome_no
         System.out.print("enter no: ");
         int n=sc.nextInt();
-        System.out.println("sum no of digit: "+sum_Digit(n));
+        System.out.println("Digit is pallindrome : "+pallindrome(n));
 
 
     }        
