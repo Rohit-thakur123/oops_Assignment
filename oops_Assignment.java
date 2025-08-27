@@ -13,6 +13,14 @@ public class oops_Assignment {
             System.out.println(n+" X "+i+" = "+(n*i));
         }
     }
+// ans 3: factorial
+    public static int factorial(int n){
+        int fact=1;
+        for(int i=1; i<=n; i++){
+            fact*=i;
+        }
+        return fact;
+    }
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -22,10 +30,13 @@ public class oops_Assignment {
         // System.out.println("hence the sum of first "+n+" natural no is: "+sum_natural_no(n));
 
 // ques 2: Multiplication Table
-        System.out.print("enter the table no: ");
+        // System.out.print("enter the table no: ");
+        // int n=sc.nextInt();
+        // table(n);
+
+// ques 3:  Factorial of a Number
+        System.out.print("enter factorial no: ");
         int n=sc.nextInt();
-        table(n);
-
-    }
-
+        System.out.println("hece the factorial of no "+n+" is: "+factorial(n));
+    }        
 }
