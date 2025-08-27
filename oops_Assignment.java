@@ -22,6 +22,17 @@ public class oops_Assignment {
         return fact;
     }
 
+//ans 3: count digit
+    public static int count_Digit(int n){
+        int count=0;
+        while(n != 0){
+            n/=10;
+            count++;
+        }
+        return count;           
+
+    }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 // ques 1: Sum of Natural Numbers
@@ -35,8 +46,14 @@ public class oops_Assignment {
         // table(n);
 
 // ques 3:  Factorial of a Number
-        System.out.print("enter factorial no: ");
+        // System.out.print("enter factorial no: ");
+        // int n=sc.nextInt();
+        // System.out.println("hece the factorial of no "+n+" is: "+factorial(n));
+
+// ques 4:  Count Digits in a Number
+        System.out.print("enter no: ");
         int n=sc.nextInt();
-        System.out.println("hece the factorial of no "+n+" is: "+factorial(n));
+        System.out.println("total no of digit: "+count_Digit(n));
+
     }        
 }
