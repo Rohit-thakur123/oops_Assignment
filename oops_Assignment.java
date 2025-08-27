@@ -33,6 +33,17 @@ public class oops_Assignment {
 
     }
 
+//ans 5: sum digit
+    public static int sum_Digit(int n){
+        int sum=0;
+        while(n != 0){
+            int last=n%10;
+            sum+=last;
+            n/=10;
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 // ques 1: Sum of Natural Numbers
@@ -51,9 +62,15 @@ public class oops_Assignment {
         // System.out.println("hece the factorial of no "+n+" is: "+factorial(n));
 
 // ques 4:  Count Digits in a Number
+        // System.out.print("enter no: ");
+        // int n=sc.nextInt();
+        // System.out.println("total no of digit: "+count_Digit(n));
+
+//ques 5: sum of digit
         System.out.print("enter no: ");
         int n=sc.nextInt();
-        System.out.println("total no of digit: "+count_Digit(n));
+        System.out.println("sum no of digit: "+sum_Digit(n));
+
 
     }        
 }
